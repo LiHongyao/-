@@ -34,6 +34,11 @@ Component({
     gradientColor: {
       type: String,
       value: ''
+    },
+    // 显示主页按钮
+    showHomeButton: {
+      type: Boolean,
+      value: true
     }
   },
 
@@ -63,7 +68,7 @@ Component({
 
   methods: {
     _init() {
-      // 计算导航栏高度
+      // 计算所需尺寸
       const { screenWidth, statusBarHeight } = wx.getSystemInfoSync();
       const { width, height, left, top, right } = wx.getMenuButtonBoundingClientRect();
       const titleBarHeight = height + (top - statusBarHeight) * 2;

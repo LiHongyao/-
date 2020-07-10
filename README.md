@@ -1,14 +1,17 @@
+![](./images/effect.gif)
+
 # 参数
 
 | 属性            | 描述                         | 默认值     |
 | --------------- | ---------------------------- | ---------- |
 | showCapsule     | 是否显示左侧胶囊按钮         | false      |
 | capsuleStyle    | 胶囊按钮风格：white / black  | white      |
+| showHomeButton  | 实现显示前往首页按钮         | true       |
 | title           | 标题                         | '默认标题' |
 | titleViewStyle  | 标题栏风格：default / custom | default    |
 | tintColor       | 前景色                       | \#373737   |
 | backgroundColor | 背景色                       | \#eeeeee   |
-| gradientColor   | 渐变导航状态下的背景色       | ''         |
+| gradientColor   | 渐变导航状态下的背景色       | ' '        |
 
 > 提示：
 >

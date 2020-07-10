@@ -13,8 +13,8 @@
         <!-- 胶囊按钮 -->
         <view wx:if="{{showCapsule}}" class="capsule-buttons" style="height:{{menuButtonHeight}}px; left:{{navigationBarLeftGap}}px; background-color:{{iconStyle.backgroundColor}}; border: {{iconStyle.border}}">
           <image wx:if='{{hasBack}}' bindtap="_goBack" class="floatL" src="{{capsuleStyle === 'black' ? './images/navbar_black_back.png' : './images/navbar_white_back.png'}}" />
-          <view wx:if='{{hasBack}}' class="line"></view>
-          <image bindtap="_goHome" src="{{capsuleStyle === 'black' ? './images/navbar_black_home.png' : './images/navbar_white_home.png'}}" />
+          <view wx:if='{{hasBack && showHomeButton}}' class="line"></view>
+          <image wx:if="{{showHomeButton}}" bindtap="_goHome" src="{{capsuleStyle === 'black' ? './images/navbar_black_home.png' : './images/navbar_white_home.png'}}" />
         </view>
       </block>
     </view>
