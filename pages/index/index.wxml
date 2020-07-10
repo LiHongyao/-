@@ -3,7 +3,6 @@
     id="app-header"
     title="首页" 
     tintColor="#ffffff" 
-    backgroundColor="transparent"
     gradientColor="orange"
   />
   <view class="banner">
