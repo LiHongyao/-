@@ -1,0 +1,26 @@
+<view class="app-header">
+  <!-- 导航栏 -->
+  <view class="navigation-bar" style="background-color: {{backgroundColor}}; color: {{tintColor}}">
+    <!-- 状态栏 -->
+    <view class="status-bar" style="height: {{statusBarHeight}}px" />
+    <!-- 标题栏 -->
+    <view class="title-bar" style="height: {{titleBarHeight}}px;">
+      <view wx:if="{{titleViewStyle === 'custom'}}" style="width:{{safeWidth}}px; margin-left:{{navigationBarLeftGap}}px;" class="custom-view">
+        <slot />
+      </view>
+      <block wx:else>
+        <view class="title-view">{{title}}</view>
+        <!-- 胶囊按钮 -->
+        <view wx:if="{{showCapsule}}" class="capsule-buttons" style="height:{{menuButtonHeight}}px; left:{{navigationBarLeftGap}}px; background-color:{{iconStyle.backgroundColor}}; border: {{iconStyle.border}}">
+          <image wx:if='{{hasBack}}' bindtap="_goBack" class="floatL" src="{{capsuleStyle === 'black' ? './images/navbar_black_back.png' : './images/navbar_white_back.png'}}" />
+          <view wx:if='{{hasBack}}' class="line"></view>
+          <image bindtap="_goHome" src="{{capsuleStyle === 'black' ? './images/navbar_black_home.png' : './images/navbar_white_home.png'}}" />
+        </view>
+      </block>
+    </view>
+  </view>
+  <!-- 渐变层 -->
+  <view class="gradient-bar" style='height:{{height}}px; background-color: {{gradientColor}}; opacity: {{opacity}}'></view>
+  <!-- 占位层/撑起高度 -->
+  <view wx:if="{{!gradientColor}}" style="height:{{height}}px;"></view>
+</view>

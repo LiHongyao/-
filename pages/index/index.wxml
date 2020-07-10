@@ -1,0 +1,21 @@
+<view class="container">
+  <app-header 
+    id="app-header"
+    title="首页" 
+    tintColor="#ffffff" 
+    backgroundColor="transparent"
+    gradientColor="orange"
+  />
+  <view class="banner">
+     <view class="title">微信小程序@自定义导航栏</view>
+     <view class="desc">关注公众号lihy_xyzt，了解更多干货</view>
+  </view>  
+  <view class="contents">
+    <view class="item" bindtap="goDetails">进入详情页</view>
+    <view class="item" bindtap="goSearch">进入搜索页</view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+  </view>
+</view>

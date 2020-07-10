@@ -1,0 +1,15 @@
+<view class="container">
+  <app-header 
+    id="app-header"
+    backgroundColor="orange"
+    titleViewStyle="custom"
+  >
+    <view class="wrapper">
+      <input placeholder="搜索关键字" placeholder-class="ph_color"></input>
+    </view> 
+  </app-header>
+
+
+  <button bindtap="goHome">返回主页</button>
+
+</view>

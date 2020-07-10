@@ -1,0 +1,9 @@
+<view class="container">
+  <app-header 
+    id="app-header"
+    title="详情" 
+    tintColor="#ffffff" 
+    backgroundColor="orange"
+    showCapsule="true"
+  />
+</view>
