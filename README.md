@@ -9,6 +9,7 @@
 | showHomeButton  | 实现显示前往首页按钮         | true       |
 | title           | 标题                         | '默认标题' |
 | titleViewStyle  | 标题栏风格：default / custom | default    |
+| leftStyle       | 左侧内容：default / custom   | custom     |
 | tintColor       | 前景色                       | \#373737   |
 | backgroundColor | 背景色                       | \#eeeeee   |
 | gradientColor   | 渐变导航状态下的背景色       | ' '        |
@@ -32,3 +33,9 @@
 # 方法
 
 - `setOpacity(scrollTop: number)`：设置渐变导航
+
+# 插槽
+
+## 1. #left
+
+自定义标题左侧内容，需设置`leftStyle` 为`custom`。

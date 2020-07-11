@@ -1,4 +1,7 @@
 Component({
+  options: {
+    multipleSlots: true
+  },
   properties: {
     // 是否显示左侧胶囊按钮
     showCapsule: {
@@ -9,6 +12,10 @@ Component({
     capsuleStyle: {
       type: String,
       value: 'white'
+    },
+    leftStyle: {
+      type: String,
+      value: 'default'
     },
     // 标题
     title: {

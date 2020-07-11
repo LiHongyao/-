@@ -12,6 +12,7 @@
   <view class="contents">
     <view class="item" bindtap="goDetails">进入详情页</view>
     <view class="item" bindtap="goSearch">进入搜索页</view>
+    <view class="item" bindtap="goOther">进入其他页</view>
     <view class="item"></view>
     <view class="item"></view>
     <view class="item"></view>

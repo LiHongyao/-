@@ -9,13 +9,19 @@
         <slot />
       </view>
       <block wx:else>
-        <view class="title-view">{{title}}</view>
         <!-- 胶囊按钮 -->
-        <view wx:if="{{showCapsule}}" class="capsule-buttons" style="height:{{menuButtonHeight}}px; left:{{navigationBarLeftGap}}px; background-color:{{iconStyle.backgroundColor}}; border: {{iconStyle.border}}">
+        <view wx:if="{{showCapsule && leftStyle === 'default'}}" class="capsule-buttons" style="height:{{menuButtonHeight}}px; left:{{navigationBarLeftGap}}px; background-color:{{iconStyle.backgroundColor}}; border: {{iconStyle.border}}">
           <image wx:if='{{hasBack}}' bindtap="_goBack" class="floatL" src="{{capsuleStyle === 'black' ? './images/navbar_black_back.png' : './images/navbar_white_back.png'}}" />
           <view wx:if='{{hasBack && showHomeButton}}' class="line"></view>
           <image wx:if="{{showHomeButton}}" bindtap="_goHome" src="{{capsuleStyle === 'black' ? './images/navbar_black_home.png' : './images/navbar_white_home.png'}}" />
         </view>
+        <!-- 自定义左侧内容 -->
+        <view wx:if="{{leftStyle === 'custom'}}" class="custom-left" style="height: {{titleBarHeight}}px; left:{{navigationBarLeftGap}}px;">
+          <slot name="left"/>
+        </view>
+        <!-- 标题 -->
+        <view class="title-view">{{title}}</view>
+        
       </block>
     </view>
   </view>

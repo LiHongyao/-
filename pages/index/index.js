@@ -20,5 +20,10 @@ Page({
     wx.navigateTo({
       url: '../search/search',
     })
+  },
+  goOther() {
+    wx.navigateTo({
+      url: '../other/other',
+    })
   }
 })

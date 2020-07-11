@@ -1,0 +1,17 @@
+<view class="container">
+  <app-header 
+    id="app-header"
+    title="自定义左侧视图"
+    tintColor="#FFFFFF"
+    backgroundColor="orange"
+    leftStyle="custom"
+  >
+    <view slot="left">
+      定位
+    </view>
+  </app-header>
+
+
+  <button bindtap="goHome">返回主页</button>
+
+</view>

@@ -22,6 +22,12 @@
   box-sizing: border-box;
   height: inherit;
 }
+.custom-left {
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
 
 .capsule-buttons {
   position: absolute;
